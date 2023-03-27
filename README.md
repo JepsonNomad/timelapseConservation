@@ -1,6 +1,6 @@
 # Time-lapse Conservation
 
-<img src="/plots/fig1.png" alt="Map (A), example image from time-lapse camera (B), and photo of Mt. Williamson (C)" height="210", width=425">
+<img src="/plots/fig1.png" alt="Map (A), example image from time-lapse camera (B), and photo of Mt. Williamson (C)" height="210" width=425">
 
 ### Time-lapse camera network reveals intra- and inter-species variation in green-up timing across the range of Sierra Nevada bighorn sheep
 
