@@ -1,6 +1,6 @@
 # Time-lapse Conservation
 
-<img src="/plots/fig1.png" alt="Map (A), example image from time-lapse camera (B), and photo of Mt. Williamson (C)" height="420" width="850">
+<img src="/plots/fig1.png" alt="Map (A), example image from time-lapse camera (B), and photo of Mt. Williamson (C)" height="315" width="638">
 
 ### Time-lapse camera network reveals intra- and inter-species variation in green-up timing across the range of Sierra Nevada bighorn sheep
 
@@ -14,15 +14,15 @@ Basic folder structure should match this repository. Using RStudio Project, work
 
 Follow the contents of the `scripts/` folder in numerical order. Descriptions follow:
 
-000_modisFunctions.R: Curve fitting functions for MODIS data
-001_cameraFunctions.R: Curve fitting functions for time-lapse GCC and snow cover data
-101_GEE_tidy.R: Convert wide-format Earth Engine NDVI output to long-format data.frame
-102_modPhenology.R: Derive phenology indices for MODIS data
-201_organizeGCC.R: Compile and clean raw greenness data
-202_camPhenology.R: Derive phenology indices for time-lapse camera data
-301_networkSummary.R: Plot mean camera-level time series (Fig 2)
-302_stanModels.R: Fit brms models and plot elevational lapse rates (Fig 3-6)
-303_aerialCoverage.R: Measure temporal variation in availability of space at peak-greenup (Fig 7)
+* 000_modisFunctions.R: Curve fitting functions for MODIS data
+* 001_cameraFunctions.R: Curve fitting functions for time-lapse GCC and snow cover data
+* 101_GEE_tidy.R: Convert wide-format Earth Engine NDVI output to long-format data.frame
+* 102_modPhenology.R: Derive phenology indices for MODIS data
+* 201_organizeGCC.R: Compile and clean raw greenness data
+* 202_camPhenology.R: Derive phenology indices for time-lapse camera data
+* 301_networkSummary.R: Plot mean camera-level time series (Fig 2)
+* 302_stanModels.R: Fit brms models and plot elevational lapse rates (Fig 3-6)
+* 303_aerialCoverage.R: Measure temporal variation in availability of space at peak-greenup (Fig 7)
 
 
 ### Notes
