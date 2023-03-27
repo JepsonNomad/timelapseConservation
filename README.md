@@ -27,4 +27,5 @@ Follow the contents of the `scripts/` folder in numerical order. Descriptions fo
 
 ### Notes
 
-Be sure to uncompress the exif.zip and extract.zip subdirectories. Note that NDVI (MODIS), elevation (DEP) and imagery (NAIP) were accessed via Google Earth Engine; code for reconstructing these data are available in their corresponding `data/` subdirectory but are required only for maps; wrangled data to reproduce analyses are in `data/` folders
+Be sure to uncompress the exif.zip and extract.zip subdirectories in the `data/` folder. Note that NDVI (MODIS), elevation (DEP) and imagery (NAIP) were accessed via Google Earth Engine; code for reconstructing these data are available in their corresponding `data/` folder but are required only for generating maps; wrangled data to reproduce analyses are in `data/`.
+
