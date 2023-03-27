@@ -1,0 +1,140 @@
+﻿Position,Was a Homography or Affine transformation used?,Was a mask used during reference keypoint selection?,Notes about transformtions and alignment,Was the homography time series manually adjusted?,Alignment finished?,Snow digitized?,Completely finished?,"Quality of image time series (1 = Poor, 5 = Excellent; 0/Empty/NA = Unusable)"
+Position,transformationType,maskUsed,transformationNotes,modifiedHomography,doneAligning,snowDigitized,doneProcessing,quality
+BA-01,Homography,FALSE,All good w/ no manual intervention needed,NO,YES,YES,YES,5
+BA-02,Homography,FALSE,All good after f2-generation alignments for 2018 through Nov 2019 and Nov 2019 through Apr 2020.,YES,YES,YES,YES,5
+BA-03,Homography,FALSE,All good w/ no manual intervention needed,NO,YES,YES,YES,5
+BA-04,Homography,FALSE,All good after realigning first half of 2019.,YES,YES,YES,YES,4
+BA-05,Homography,FALSE,Good after 4 Apr 2019 frameshift.Acceptable prior to frameshift.,NO,YES,YES,YES,4
+BA-06,Homography,TRUE,"Re-transformed with revised homography in 2019, based on early 2020 alignment. Starting in Sept 2020, cam door opened and obscured image.",YES,YES,YES,YES,5
+BA-07,NOALIGN,FALSE,Broken exif data,NO,YES,NO,YES,0
+BA-08,Homography,TRUE,All good w/ no manual intervention needed,NO,YES,YES,YES,5
+BA-09,Homography,FALSE,All good w/ no manual intervention needed,NO,YES,YES,YES,5
+BA-10,Homography,FALSE,All good w/ no manual intervention needed,NO,YES,YES,YES,5
+BA-11,Homography,FALSE,All good w/ no manual intervention needed,NO,YES,YES,YES,5
+BA-12,Homography,FALSE,All good w/ no manual intervention needed,NO,YES,YES,YES,5
+BA-13,Homography,FALSE,Slight shift/trend through 2019 due to manual override of messy transformation but overall fine,YES,YES,YES,YES,4
+BA-14,Homography,FALSE,Applied a 15-day moving window. All good with no other interventions required.,YES,YES,YES,YES,5
+BA-15,Homography,FALSE,All good w/ no manual intervention needed,NO,YES,YES,YES,5
+CN-01,Homography,FALSE,"Overrode Aug 2019 homographies to match first identified homography, and applied a moving window transform. Overall a fine alignment after these adjustments",YES,YES,YES,YES,4
+CN-02,Homography,FALSE,All good w/ no manual intervention needed,NO,YES,YES,YES,5
+CN-03,Homography,FALSE,All good w/ no manual intervention needed,NO,YES,YES,YES,5
+CN-04,Homography,TRUE,"Somewhat noisy transformation, applied a moving average in transformation matrix",YES,YES,YES,YES,3
+CN-05,Homography,FALSE,"Catastrophic frameshift winter 2020-2021. Prior to that, all good.",NO,YES,YES,YES,2
+CN-06,Homography,FALSE,Realigned all Aug 2019 - 27 Oct 2019 to 28 Oct 2019. 28 Oct 2019 was the first successful alignment of the time series prio to that; after f2 alignment generation all was good.,NO,YES,YES,YES,5
+CN-07,Homography,FALSE,All good after an f2 alignment for Aug 2019 - June 2020,NO,YES,YES,YES,5
+CN-08,Homography,TRUE,All good w/ no manual intervention needed,NO,YES,YES,YES,5
+CN-09,Homography,FALSE,"All good after f2-generation alignments for fall 2019 and spring 2021, separately.",YES,YES,YES,YES,5
+CN-10,Homography,FALSE,"Bad alignment in 2021. Generated custom 2021 alignment using 15 manual keypoints in alignment keyframe and 15 manual keypoints in a single 2021 image (using imageJ), then calculating homography from that and applying to all 2021 images (python3 printHomography.py).",YES,YES,YES,YES,5
+CN-11,Homography,FALSE,"Bad alignment, but regions of interest are broad VEG VEG",NO,YES,YES,YES,2
+CN-12,Homography,FALSE,All good w/ no manual intervention needed,NO,YES,YES,YES,5
+CN-13,Homography,FALSE,"Bad alignment for chunks of 2019. 2019-09-08 homography used for all 2019 images, and 2020-01-01 through 2020-06-09.",YES,YES,YES,YES,4
+CN-14,Homography,FALSE,"Realigned some winter data. Slight issue persists during winter 2020-2021, but it is during a snow-covered period and insignificant for veg greenness.",YES,YES,YES,YES,4
+CN-15,Homography,FALSE,Inconsistent lighting but good alignment,NO,YES,YES,YES,4
+GB-01,Homography,FALSE,All good w/ no manual intervention needed,NO,YES,YES,YES,5
+GB-02,Homography,FALSE,All good w/ no manual intervention needed,NO,YES,YES,YES,5
+GB-03,Homography,FALSE,All good after an f2-generation alignment step,YES,YES,YES,YES,5
+GB-04,Homography,FALSE,Great alignment after 3 subsets' worth of f2-generations,YES,YES,YES,YES,5
+GB-05,Homography,FALSE,Aligned with mask. Not great but passable; No good in 2021,NO,YES,YES,YES,3
+GB-06,Homography,FALSE,Poor alignment but a consistent mess of undifferentiable veg the whole time series.,NO,YES,YES,YES,3
+GB-07,Homography,FALSE,All good w/ no manual intervention needed,NO,YES,YES,YES,5
+GB-08,Homography,FALSE,"Site is constantly eroding, preventing effective alignment. Some homographies overridden but still not a great camera.",YES,YES,YES,YES,2
+GB-09,Homography,FALSE,All good w/ no manual intervention needed,NO,YES,YES,YES,5
+GB-10,Homography,FALSE,"Applied a 15-day moving window to the raw transformation. Then used f2-alignments on two subsets, generating somewhat shaky but decent alignment",YES,YES,YES,YES,4
+GB-11,NOALIGN,FALSE,Essentially no alignment,NO,YES,NO,YES,0
+GB-12,Homography,FALSE,All good after aligning all imagery pre-Jul 2020 to a reference frame then f2 with imageJ keypoints from there.,YES,YES,YES,YES,5
+GB-13,Homography,FALSE,"Realigned all image prior to 7 June 2019 to an Aug 2018 image, then chainHomography'd to create a satisfactory f2 alignment table",YES,YES,YES,YES,5
+GB-14,Homography,FALSE,All good w/ no manual intervention needed,NO,YES,YES,YES,5
+GB-15,Homography,FALSE,Cam dropped in early 2020 and faced the sky. Sky photos removed. All directed photos aligned well,NO,YES,YES,YES,4
+LN-01,Homography,FALSE,Applied a 15-day moving window transform. Overrode 2020-04-26 and 2020-04-27 to receive 2020-04-28 transformation. ,YES,YES,NO,YES,3
+LN-02,Homography,FALSE,Decent custom homographies.,YES,YES,YES,YES,4
+LN-03,Homography,FALSE,Slight shift/trend through 2019 due to manual override of messy transformation but overall fine,YES,YES,YES,YES,4
+LN-04,Homography,FALSE,"Some shifting remains but decent alignment with manual transformations. For early 2020, use 12 May transformation. For 2019, use Sept 3 transformation. For 2021, use June 17.",YES,YES,YES,YES,3
+LN-05,Homography,FALSE,Required many subsets for decent alignment. Acceptable results.,YES,YES,YES,YES,4
+LN-06,Homography,FALSE,Bad alignment. Messy substrate prevents automated alignment.,NO,YES,NO,YES,0
+LN-07,Homography,FALSE,"Bad alignment during a camera fall in 2020, but otherwise good once a mask was used. Bad alignment spanned 16 April 2020 through 23 June 2020.",NO,YES,YES,YES,4
+LN-08,Homography,FALSE,Bad alignment early 2020 - repaired with manual alignment. Some issues with super early 2020 alignment but they're snowy days anyway,YES,YES,YES,YES,4
+LN-09,Homography,FALSE,"Good alignment after manual override of very first few days, and 9,10,11 Aug 2019",YES,YES,YES,YES,4
+LN-10,Homography,FALSE,Cam broken 25 Oct 2019 through 25 Apr 2020. Working with great alignment otherwise. First two days alignment failed.,NO,YES,YES,YES,4
+LN-11,Homography,FALSE,"2 subsets, one for fall 2019 and one for spring 2020, were sufficient for a good alignment.",YES,YES,YES,YES,4
+LN-12,Homography,FALSE,Generally poor alignment but good during 2020 and early 2021,NO,YES,NO,YES,0
+LN-13,Homography,FALSE,All good after manually adjusting first 4 days of time series,YES,YES,YES,YES,5
+LN-14,Homography,FALSE,NOTE TIME DISPARITY. CAM TIME IS OFFSET BY ABOUT A MONTH. Manual homography worked out decently.,YES,YES,YES,YES,4
+LN-15,Homography,FALSE,Good alignment with manual override in 2019,YES,YES,YES,YES,4
+OL-01,Homography,FALSE,"No good before 4 Aug 2020. Prior to that frame barely has overlap and a noisy substrate. Finally, the prominent Eriogonum in the image moves (trampled?) between 7 and 8 September 2019. Removing all pre-2020 photos from alignment workflow.",YES,YES,YES,YES,3
+OL-02,Homography,FALSE,"Never moved, so no alignment necessary (alignment would not have worked at this cam anyway due to intensive graminoid cover and lack of ""corners"")",NO,YES,YES,YES,4
+OL-03,Homography,FALSE,"With f2 alignment in 2019 and early 2020, all good for 2020. Frameshift in Apr 2021 that will require modification for future phenology.",YES,YES,YES,YES,4
+OL-04,Homography,FALSE,"Used mask for 1st and second subsets, but not third. Three keyframes with 3 chain homographies. For subset2, assigned 19 Sep 2019 homgraphy to all June-18Sept2019 frames.",YES,YES,YES,YES,3
+OL-05,Homography,FALSE,"Cam fell 2019 Aug 09, fixed 2019 Aug 25. All good w/ no manual intervention needed",NO,YES,YES,YES,5
+OL-06,Homography,FALSE,All good w/ no manual intervention needed,NO,YES,YES,YES,5
+OL-07,Homography,FALSE,"Manual override for 6 April through 25 April homography using imageJ keypoints. Otherwise, all good.",YES,YES,YES,YES,5
+OL-08,Homography,FALSE,All good w/ no manual intervention needed,NO,YES,YES,YES,5
+OL-09,Homography,FALSE,Somewhat wobbly but overall fine with major frameshifts after creating 2 subsets for summer 2019.,YES,YES,YES,YES,4
+OL-10,Homography,FALSE,Satisfactory after a two subsets' f2-alignments. Wobbly in the winter but pretty consistent during growing season.,YES,YES,YES,YES,3
+OL-11,Homography,FALSE,"Bad aligment. Generally a bad camera too, extreme lighting variation, super close to the ground. May have to be discarded.",NO,YES,NO,YES,1
+OL-12,Homography,FALSE,All good w/ no manual intervention needed,NO,YES,YES,YES,5
+OL-13,Homography,FALSE,All good w/ no manual intervention needed,NO,YES,YES,YES,5
+OL-14,Homography,FALSE,All good except the last 2 photos,NO,YES,YES,YES,4
+OL-15,Homography,FALSE,All good after an f2 alignment for May-June 2020,YES,YES,YES,YES,5
+SW-01,Homography,FALSE,All good w/ no manual intervention needed,NO,YES,YES,YES,5
+SW-02,Homography,FALSE,"Cam has fallen every winter so far. When cam is upright, alignment is excellent. Only good senescence data.",NO,YES,YES,YES,0
+SW-03,Homography,FALSE,All good w/ no manual intervention needed,NO,YES,YES,YES,5
+SW-04,Homography,FALSE,All good w/ no manual intervention needed,NO,YES,YES,YES,5
+SW-05,Homography,FALSE,"Manual override for early 2020, but otherwise a generally good alignment",YES,YES,YES,YES,4
+SW-06,Homography,FALSE,"Manual keypoints improved 2019 alignment. Starting late 2020, cam shifts so no plot is visible but alignment is good.",YES,YES,YES,YES,3
+SW-07,Homography,FALSE,All good w/ no manual intervention needed,NO,YES,YES,YES,5
+SW-08,Homography,FALSE,"Manual override for first two days, otherwise a fine alignment",YES,YES,YES,YES,4
+SW-09,Homography,FALSE,All good after f2 alignment for May-June 2020.,YES,YES,YES,YES,5
+SW-10,Homography,FALSE,All good w/ no manual intervention needed. No data between Dec 2019 and Aug 2020,YES,YES,YES,YES,4
+SW-11,Homography,FALSE,Overrode 23 Mar - 28 May 2021 with 29 May homography. Subset all 2019 imagery until catastrophic camera fall in Dec 2019 to f2 align. Cam unusable 10 Dec 2019 through 26 Apr 2020.,YES,YES,YES,YES,3
+SW-12,Homography,FALSE,Applied a 15-day moving window to raw transform table for smoothing. Subset all imagery pre-23 Apr 2020 to generate a f2 alignment.,YES,YES,YES,YES,3
+SW-13,Homography,FALSE,All good w/ no manual intervention needed,NO,YES,YES,YES,5
+SW-14,NOALIGN,FALSE,"No data, cam lost",NO,YES,NO,YES,0
+SW-15,Homography,FALSE,Manual override for first ~10 days. Otherwise excellent alignment,YES,YES,YES,YES,4
+WA-01,Homography,FALSE,A few manual homography overrides; looks good. Missing data one spring and offset exif time-stamp by one year prior to Aug 2020,YES,YES,YES,YES,5
+WA-02,Homography,FALSE,"Mediocre alignment but may be sufficient given the low number and degree of isolation among GCC ROI's. Manual assignment of Dec 2018 alignment to all other 2018 images, which had initially failed to align.",YES,YES,YES,YES,3
+WA-03,Homography,FALSE,"Aligned pre-June 6 2019 images to 10 Nov 2018, then transformed using custom transformation matrix based on 10 Nov 2018 - 16 Aug 2020 homography calculated using imageJ keypoints. Also manually applied 7 June 2019 homography to 6 June 2019.",YES,YES,YES,YES,5
+WA-04,Homography,FALSE,All good w/ no manual intervention needed,NO,YES,YES,YES,5
+WA-05,Homography,FALSE,Mediocre alignment after several manual attempts at keypoint pairing. Generally a poor plot.,YES,YES,YES,YES,2
+WA-06,Homography,FALSE,Cam should be discarded. Cam fell during winters leading to no snowmelt or greenup data. Some good senescence data but frames are so different across years alignment is not possible. ,NO,YES,NO,YES,0
+WA-07,Homography,FALSE,Used a 3-day moving window homography average. Alignment issues during snowy season in early 2021 but otherwise fine.,YES,YES,YES,YES,3
+WA-08,Homography,FALSE,Terrible alignment but general veg cover across time series,YES,YES,YES,YES,3
+WA-09,Homography,FALSE,"Bad alignment and inconsistent data. Another candidate for the trash can. Consider using a wide ROI just covering the frame, retaining only ""downward-pointing"" images, and calling it ""VEG VEG""",NO,YES,NO,YES,0
+WA-10,Homography,FALSE,Bad alignment due to major camera movements - not just rotation but physical movement - as well as talus erosion. Generally a bad spot.,NO,YES,NO,YES,0
+WA-11,Homography,FALSE,"Split into 3 subsets. For the first subset, overrode 2018-08-28 with 2018-08-29 matrix. Overrode 2018-09-22 through 2018-10-10 with 2018-10-11 matrix. For subset3, overrode 2020-04-23 with 2020-04-24 homography, and 2020-04-26 through 2020-05-08 with 2020-05-11 homography. Added 15-day movign window smoother to each f2 transTable.",YES,YES,YES,YES,3
+WA-12,Homography,FALSE,Good alignment after making 5 subsets with f2-generation alignments; 2 of which actualy had f3 alignments spanning a second intermediary keyframe.,YES,YES,YES,YES,3
+WA-13,Homography,FALSE,Realigned 2018-2019 imagery using a custom homography. Unusable imagery from 2019-08-20 through 2020-06-11 due to fallen cam.,YES,YES,YES,YES,4
+WA-14,Homography,FALSE,All good w/ no manual intervention needed,NO,YES,YES,YES,5
+WA-15,Homography,FALSE,All good after 2 subsets and f2-generation alignments,YES,YES,YES,YES,5
+WH-01,Homography,FALSE,"All good after re-aligning summer 2019 images to a single Jul 2019 photo, then using chainHomography.",YES,YES,YES,YES,4
+WH-02,Homography,FALSE,All good w/ no manual intervention needed,NO,YES,YES,YES,5
+WH-03,Homography,FALSE,Re-aligned first half of time series to a summer 2019 image. 2019 green-up data is useable now but 2018 senescence unacceptable. 2019 senescence unacceptable due to camera falling; also means loss of critical post-snow 2020 data.,YES,YES,YES,YES,2
+WH-04,Homography,FALSE,"Slightly imperfect alignment during Jan and Feb 2020, but frame is so shifted that ROI's aren't in scene anyway.",YES,YES,YES,YES,4
+WH-05,Homography,FALSE,All good after 4 subsets' worth of f2's. Slightly shaky spring of 2020. Tons of lizards in this plot,YES,YES,YES,YES,4
+WH-06,Homography,FALSE,"Removed images from fallen periods (2019 jan 26 through 2019 june 7, and 2019 aug 22 through 2020 apr 24). 2018 imagery has no overlap with other images, so removd 2018 as well.",YES,YES,YES,YES,4
+WH-07,Homography,FALSE,"Removed the first year of fallen imagery. Starting Aug 2019 all is good, implemented a 15-day moving window transformation.",YES,YES,YES,YES,5
+WH-08,Homography,FALSE,Good alignment with manual override in 2019,YES,YES,YES,YES,4
+WH-09,Homography,FALSE,All good w/ no manual intervention needed,NO,YES,YES,YES,5
+WH-10,Homography,FALSE,All good w/ no manual intervention needed,NO,YES,YES,YES,5
+WH-11,Homography,FALSE,All good w/ no manual intervention needed,NO,YES,YES,YES,5
+WH-12,Homography,FALSE,All good after overriding 2018 transformations,YES,YES,YES,YES,5
+WH-13,Homography,FALSE,All good w/ no manual intervention needed,NO,YES,YES,YES,5
+WH-14,Homography,FALSE,Used a 3-day moving window smoother for raw homography matrix and got decent results outside of the snowy season,YES,YES,YES,YES,3
+WH-15,Homography,FALSE,All good after overriding early 2020 homography with imageJ keyoint homography,YES,YES,YES,YES,5
+WL-01,Homography,FALSE,All good w/ no manual intervention needed,NO,YES,YES,YES,5
+WL-02,Homography,FALSE,Assigned all early homographies the value of the fis properly registered homography. Slight warping arises across the shfit during late April 2020. However all other alignments (and alignment within major frame orientation windows) were good.,YES,YES,YES,YES,4
+WL-03,Homography,FALSE,All good w/ no manual intervention needed,NO,YES,YES,YES,5
+WL-04,Homography,FALSE,Poor alignment during 2019-2020 snowy season but otherwise fine,YES,YES,YES,YES,3
+WL-05,Homography,FALSE,Good results after manual alignment,YES,YES,YES,YES,4
+WL-06,Homography,FALSE,All good w/ no manual intervention needed,NO,YES,YES,YES,5
+WL-07,Homography,FALSE,All good w/ no manual intervention needed,NO,YES,YES,YES,4
+WL-08,Homography,FALSE,"Applied a moving window (width = 3 days) smooth to transformation matrix, then acceped May 3 2021 homography as representative of ALL 2021 images. Turned out great.",YES,YES,YES,YES,4
+WL-09,Homography,FALSE,All good w/ no manual intervention needed,NO,YES,YES,YES,5
+WL-10,Homography,FALSE,All good w/ no manual intervention needed,NO,YES,YES,YES,5
+WL-11,Homography,FALSE,Realigned 2019 images to a separate 2019 keyframe. Manual override for 9 May 2020 through 28 May 2020 due to weird homography generation. Somewhat wobbly but overall decent alignment.,YES,YES,YES,YES,3
+WL-12,Homography,FALSE,All good w/ no manual intervention needed,NO,YES,YES,YES,5
+WL-13,NOALIGN,FALSE,Cam useful for 2019 senescence but that's it. Constantly caught in avalanches.,NO,YES,NO,YES,0
+WL-14,Homography,FALSE,Never aligned even once. May be a decent VEG VEG plot.,NO,YES,NO,YES,0
+WL-15,Homography,FALSE,All good w/ no manual intervention needed. Modified homographyfirst 3 days to match the remainder of 2019 alignment,YES,YES,YES,YES,5
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
